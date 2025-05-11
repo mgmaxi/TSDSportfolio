@@ -130,7 +130,7 @@ article ul li {
   
 }
 
-.profileImageContainer{
+.profile-image-container{
   width: 50%;
   height: 100%;
   display: flex;
@@ -138,7 +138,7 @@ article ul li {
   align-items: center;
 }
 
-.profileImage{
+.profile-image{
   width: 12rem;  
   height: 12rem;
   border-radius: 50%; 
@@ -186,7 +186,7 @@ footer{
   fill: white;
 }
 
-.iconContainer{
+.icon-container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,7 +216,7 @@ footer{
     flex-shrink: 0;
 }
 
-.projectImage{
+.project-image{
   width: 100px;
   height: 100px;
   border-radius: 5px;
