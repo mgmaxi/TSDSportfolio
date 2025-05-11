@@ -1,0 +1,185 @@
+/* Resetear elementos */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    margin: 0;
+    padding: 0;
+  }
+  
+/* ----- */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f5f6fa;
+  }
+  
+  header {
+    height: 120px;
+    background-color: rgba(0, 62, 124, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 1.25rem; 
+  }
+
+  h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+    text-transform: uppercase;
+  }
+
+  #about > div > h2 {
+    text-align: start;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+h3 span{
+  font-weight: normal;
+}
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 6px;
+    padding: 0 16px;
+    flex: 1 0 auto;
+    text-align: center;
+    width: 80px;
+}
+
+nav ul li a{
+    font-size: 1rem;
+     white-space: nowrap;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #ffffff7a; 
+    transform: scale(1.03); 
+}
+
+main{
+  padding: 20px 30px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  max-width: 56.25rem;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px 15px;
+}
+
+article ul li {
+  margin: 0 1rem;
+  padding: .25rem .5rem;
+  font-size: .90rem;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#about > div{
+  flex-direction: column;
+  width: 70%;
+  
+}
+
+.profileImageContainer{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage{
+  width: 12rem;  
+  height: 12rem;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 1px solid;
+}
+
+.card {
+    background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #ccc;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.icon { 
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: white;
+}
+
+.iconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
