@@ -27,7 +27,7 @@ a {
     padding: 0;
   }
   
-/* ----- */
+/* Código CSS general */
 
   body {
     display: flex;
@@ -159,6 +159,14 @@ article ul li {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+section article  > h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #003e7c; 
+    border-left: 4px solid #003e7c;
+    padding-left: 10px;
+}
+
 footer{
   display: flex;
   justify-content: center;
@@ -182,4 +190,280 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Estilos de la sección Proyectos */
+
+.projects-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.projectImage{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.project-item-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-item[data-project="Github"] .project-icon {
+    color: #000000;
+}
+
+.project-item[data-project="Deploy"] .project-icon {
+    color: #000000;
+}
+
+.project-icon{
+  font-size: 1.5rem;
+  padding: 0 0 10px 0;
+}
+
+.project-name{
+  font-size: .9rem;
+
+}
+
+/* Estilos para la sección de tecnologías */
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.tech-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #003e7c;
+    border-left: 4px solid #003e7c;
+    padding-left: 10px;
+}
+
+.tech-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.tech-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #003e7c;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover .tech-icon {
+    transform: scale(1.2);
+}
+
+.tech-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Colores específicos para cada tecnología */
+.tech-item[data-tech="HTML"] .tech-icon {
+    color: #e34c26;
+}
+
+.tech-item[data-tech="CSS"] .tech-icon {
+    color: #264de4;
+}
+
+.tech-item[data-tech="JavaScript"] .tech-icon {
+    color: #f7df1e;
+}
+
+.tech-item[data-tech="React"] .tech-icon,
+.tech-item[data-tech="React Native"] .tech-icon {
+    color: #61dafb;
+}
+
+.tech-item[data-tech="Angular"] .tech-icon {
+    color: #dd0031;
+}
+
+.tech-item[data-tech="Java"] .tech-icon {
+    color: #007396;
+}
+
+.tech-item[data-tech="NodeJS"] .tech-icon {
+    color: #339933;
+}
+
+.tech-item[data-tech="Firebase"] .tech-icon {
+    color: #ffca28;
+}
+
+.tech-item[data-tech="Spring Boot"] .tech-icon {
+    color: #34a853;
+}
+
+.tech-item[data-tech="Kotlin"] .tech-icon {
+    color: #34a853;
+}
+
+.tech-item[data-tech="MySQL"] .tech-icon {
+    color: #4479a1;
+}
+
+/* Sección contacto */
+
+#contact { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input {
+  display: block;
+  max-width: 400px;
+  padding: 0.4rem 0;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  max-width: 400px;
+  width: 100%;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1f6391;
+}
+
+
+/* Animaciones*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tech-item {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tech-flex {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .tech-item {
+        width: 90px;
+    }
+    
+    .tech-icon {
+        font-size: 1.8rem;
+    }
+    
+    .tech-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-flex {
+        gap: 0.8rem;
+    }
+    
+    .tech-item {
+        width: 80px;
+        padding: 0.8rem 0.4rem;
+    }
+    
+    .tech-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .tech-category h3 {
+        font-size: 1.1rem;
+    }
 }
