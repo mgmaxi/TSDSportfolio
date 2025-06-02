@@ -57,4 +57,4 @@ Se encuentra deployado en este [enlace](https://mgmaxi.github.io/TSDSportfolio)
 
 ## Preview de portfolio
 
-<img src="assets/img/previewPortfolio.png" alt="porfolio>"
+<img src="assets/img/previewPortfolio.png" alt="porfolio">
