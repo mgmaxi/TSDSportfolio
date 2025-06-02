@@ -1,9 +1,21 @@
+/* Variables */
+
+:root {
+  --primary-color: rgba(0, 62, 124, 0.9);
+  --secondary-color: #3498db;
+  --third-color: #000000;
+  --fondo-principal: #f0f0f0;
+  --primary-font: 'Montserrat', sans-serif;
+  --background-secondary:rgba(0, 62, 124, 0.9);
+  --font-size: 16px;
+}
+
 /* Resetear elementos */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--primary-font);
     font-size: 16px;
   }
   
@@ -61,6 +73,9 @@ a {
 
   h2{
     text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--font-principal);
   }
 
 h3 span{
@@ -127,7 +142,6 @@ article ul li {
 #about > div{
   flex-direction: column;
   width: 70%;
-  
 }
 
 .profile-image-container{
@@ -147,7 +161,7 @@ article ul li {
 }
 
 .card {
-    background: #fff;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   border: 1px solid #e0e0e0;
@@ -239,11 +253,11 @@ footer{
 }
 
 .project-item[data-project="Github"] .project-icon {
-    color: #000000;
+    color: var(--third-color);
 }
 
 .project-item[data-project="Deploy"] .project-icon {
-    color: #000000;
+    color: var(--third-color);
 }
 
 .project-icon{
@@ -361,54 +375,112 @@ footer{
     color: #4479a1;
 }
 
-/* Sección contacto */
+/*-------------Estilos de sección Contacto-------------*/
 
-#contact { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.seccion-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#contact > form {
-  width: 100%;
+.seccion-contacto p {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-principal);
+}
+
+.seccion-contacto img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.form-contacto {
   max-width: 400px;
+  margin: 2rem auto;
+}
+
+.icono-input {
+  position: relative;
+}
+.icono-input i {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--third-color);
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.campo-formulario {
+  margin-bottom: 1.5rem;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: center;
-}
-
-label {
-  display: block;
   width: 100%;
-  margin-bottom: 0.3rem;
-  font-weight: 600;
+  font-family: var(--font-principal);
 }
 
-input {
-  display: block;
-  max-width: 400px;
-  padding: 0.4rem 0;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.campo-formulario input, .campo-formulario textarea {
+  all: unset;
+  font-family: var(--font-principal);
+  padding: 1rem 0;
+  padding-left: 2.5rem;
+  height: 1.5rem;
   font-size: 1rem;
-}
-
-button {
-  padding: 0.6rem 1.2rem;
-  max-width: 400px;
-  width: 100%;
-  background-color: #2980b9;
-  color: white;
+  background-color: rgb(255, 255, 255, 0.1);
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
+  border-bottom: 1px solid #000000 !important;
+  transition: height color 0.7s ease;
+  resize: none;
 }
 
-button:hover {
-  background-color: #1f6391;
+
+.campo-formulario textarea:focus {
+    height: 8rem;
 }
+
+.campo-formulario input:focus, .campo-formulario textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.campo-formulario input::placeholder, .campo-formulario textarea::placeholder {
+  color: rgb(0, 0, 0);
+   transition: color .7s ease;
+}
+
+.campo-formulario input:focus::placeholder,
+.campo-formulario textarea:focus::placeholder {
+  color: transparent;
+}
+
+.btn-contacto {
+    margin: 2rem 0 0 0;
+  padding: 1rem;
+  background-color: var(--third-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #3c3c3c;
+} 
+
+.btn-contacto i{
+    margin: 0 1rem 0 0;
+}
+
 
 
 /* Animaciones*/

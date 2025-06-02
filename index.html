@@ -16,6 +16,10 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<header>
@@ -35,7 +39,7 @@
 			<!-- Sección en la que muestro información general -->
 			<section id="about">
 				<div>
-					<h2>Maximiliano Melani Ghirardi</h2>
+					<h3>Maximiliano Melani Ghirardi</h3>
 					<p>
 						Desarrollador de Software y técnico en Administración y Gestión
 						Tributaria, con experiencia en análisis funcional, testing y gestión
@@ -354,22 +358,53 @@
 				</div>
 			</section>
 			<!-- Sección para contactarme -->
-			<section id="contact" class="card">
+			<section id="contact" class="card seccion-contacto">
 				<h2>Contacto</h2>
 				<p>
 					Si queres trabajar conmigo por favor completa los siguientes campos y
 					envia el formulario para que pueda contactarte.
 				</p>
-				<form action="">
-					<label for="firstname">Nombre</label>
-					<input type="text" id="firstname" name="firstname" />
-					<label for="lastname">Apellido</label>
-					<input type="text" id="lastname" name="lastname" />
-					<label for="telephone">Teléfono</label>
-					<input type="tel" id="telephone" name="telephone" />
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" />
-					<button type="submit">Enviar</button>
+				<!-- <img src="imagenes/tazadete.png" alt="Taza de té" /> -->
+				<form action="/enviar-formulario" method="post" class="form-contacto">
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-user"></i>
+						<input
+							type="text"
+							id="nombre"
+							name="nombre"
+							placeholder="Nombre"
+							required
+						/>
+					</div>
+
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-envelope"></i>
+
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Correo electrónico"
+							required
+						/>
+					</div>
+
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-comment-dots"></i>
+						<textarea
+							id="mensaje"
+							name="mensaje"
+							placeholder="Escribe tu mensaje"
+							rows="5"
+							required
+						></textarea>
+					</div>
+
+					<div class="campo-formulario">
+						<button type="submit" class="btn-contacto">
+							<i class="fa fa-paper-plane"></i>Enviar
+						</button>
+					</div>
 				</form>
 			</section>
 		</main>
