@@ -1,10 +1,10 @@
 # 📝 Portfolio
 
 ## Introducción
-  
+
 Este proyecto es un trabajo solicitado para la materia Desarrollo de Sistemas Web (Front End) de la Tecnicatura Superior en Desarrollo de SoftWare.
 
-Se encuentra deployado en este [enlace](https://mgmaxi.github.io/TSDSportfolio) 
+Se encuentra deployado en este [enlace](https://mgmaxi.github.io/TSDSportfolio)
 
 ---
 
@@ -42,6 +42,7 @@ Se encuentra deployado en este [enlace](https://mgmaxi.github.io/TSDSportfolio)
 ---
 
 ## 📂 Estructura del proyecto
+
 ```
 /mi-portfolio/
 │
@@ -53,3 +54,7 @@ Se encuentra deployado en este [enlace](https://mgmaxi.github.io/TSDSportfolio)
       └── /img/
             ├── logos, imagen de perfil, imagen de preview de proyectos.
 ```
+
+## Preview de portfolio
+
+<img src="assets/img/previewPortfolio.png" alt="porfolio>"
